@@ -1,13 +1,3 @@
-bl_info = {
-    "name": "Add Shape Set",
-    "author": "Ximmer",
-    "version": (1, 0),
-    "blender": (3, 6, 0),
-    "location": "Object > Add Shape Set",
-    "description": "Add predefined blendshape sets to the selected object",
-    "category": "Object",
-}
-
 import bpy
 
 SHAPES_VRC_VISEMES = [
