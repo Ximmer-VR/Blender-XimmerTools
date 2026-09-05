@@ -390,7 +390,8 @@ class OBJECT_OT_add_shape_set(bpy.types.Operator):
             # avoid dupes
             names = [k.name for k in obj.data.shape_keys.key_blocks]
             if shape not in names:
-                obj.shape_key_add(name=shape)
+                new_shape = obj.shape_key_add(name=shape)
+                new_shape.value = 0.0
 
         self.report({'INFO'}, f"Added {self.set_name} shapes")
         return {'FINISHED'}
@@ -424,7 +425,8 @@ class OBJECT_OT_convert_shape_set(bpy.types.Operator):
 
         conversion_name = conversion['SetName']
 
-        obj.shape_key_add(name=f'=== {conversion_name} ===', from_mix=False)
+        new_key = obj.shape_key_add(name=f'=== {conversion_name} ===', from_mix=False)
+        new_key.value = 0.0
 
         for target_name, sources in conversion.items():
 
@@ -434,9 +436,9 @@ class OBJECT_OT_convert_shape_set(bpy.types.Operator):
             # Create target shape if missing
             if target_name not in key_blocks:
                 target = obj.shape_key_add(name=target_name, from_mix=False)
+                target.value = 0.0
             else:
                 target = key_blocks[target_name]
-                target.value = 0.0
 
             # Reset target to basis
             for i, v in enumerate(target.data):
