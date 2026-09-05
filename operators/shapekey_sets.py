@@ -279,16 +279,88 @@ UE_TO_SRANIPAL = {
     "Tongue_Roll":              {"TongueRoll": 1.0},
 }
 
+# Shape conversion set by Octo Hedgie
+# https://beanburrow.com
 UE_TO_MMD = {
     "SetName": "MMD",
+    "ｷﾘｯ": {"EyeLookOut": 1.0}, # Kiri-eye
+    "びっくり": {"EyeLookUp": 1.0}, # Ha!!!
+    "じと目": {"EyeLookDown": 1.0}, # Jito-eye
+    "まばたき": {"EyeClosed": 1.0}, # Blink
+    "ｳｨﾝｸ２右": {"EyeClosedLeft": 1.0}, # EyeBlinkL
+    "ウィンク２": {"EyeClosedRight": 1.0}, # EyeBlinkR
+    "恐ろしい": {"EyeSquint": 1.0}, # Anger-eye
+    "はちゅ目": {"EyeWide": 1.0}, # O O
+    "瞳小 ": {"EyeConstrict": 1.0}, # EyeSmall
+    "眉下": {"BrowDown": 1.0}, # DOWN
+    "左眉下げ": {"BrowDownLeft": 1.0}, # DOWN-L
+    "右眉下げ": {"BrowDownRight": 1.0}, # DOWN-R
+    "眉上": {"BrowUp": 1.0}, # UP
+    "左眉上げ": {"BrowUpLeft": 1.0}, # UP-L
+    "右眉上げ": {"BrowUpRight": 1.0}, # UP-R
+    "困った": {"BrowInnerUp": 1.0}, # Trouble
+    "怒り眉": {"BrowOuterUp": 1.0}, # Get Angry
+    "左眉怒り": {"BrowOuterUpLeft": 1.0}, # Anger-L
+    "右眉怒り": {"BrowOuterUpRight": 1.0}, # Anger-R
+    "下まぶた上げ": {"CheekSquint": 1.0}, # BottomLid-Up
+    "歯無し下": {"LipSuckUpper": 1.0}, # ToothBnon
+    "歯無し上": {"LipSuckLower": 1.0}, # ToothAnon
+    "お小さい": {"LipFunnel": 1.0}, # O-Small
+    "キッス": {"LipPucker": 1.0}, # Kiss
+    "トップリップ": {"MouthUpperUp": 1.0}, # TopLip
+    "ボトムリップ": {"MouthLowerDown": 1.0}, # BottomLip
+    "にっこり": {"MouthSmile": 1.0}, # Smile
+    "口上げ": {"MouthStretch": 1.0}, # MouseDW
+    "左口角上げ": {"MouthStretchLeft": 1.0}, # MouseDW-L
+    "右口角上げ": {"MouthStretchRight": 1.0}, # MouseDW-R
+    "∧": {"MouthFrown": 1.0}, # Mouse_2
+    "口横広げ": {"MouthDimple": 1.0}, # MouseWD
+    "左口横広げ": {"MouthDimpleLeft": 1.0}, # MouseSideWD-L
+    "右口横広げ": {"MouthDimpleRight": 1.0}, # MouseSideWD-R
+    "口下げ": {"MouthRaiser": 1.0}, # MouseUP
+    "口角下げ": {"MouthPress": 1.0}, # MouseDW
+    "左口角下げ": {"MouthPressLeft": 1.0}, # MouseDW-L
+    "右口角下げ": {"MouthPressRight": 1.0}, # MouseDW-R
+    "口すぼめる": {"MouthTightener": 1.0}, # MouseIN
+    "ぺろっ": {"TongueOut": 1.0}, # Blep
+    "あ": {"JawOpen": 1.0}, # a
+    "あ２": {"JawOpen": 1.5}, # a 2
+    "え": {"JawOpen": 0.3, "LipSuckUpper": 0.8, "MouthLowerDown": 0.5, "MouthStretch": 0.4}, # e
+    "い": {"LipSuckUpper": 0.8, "MouthLowerDown": 0.5, "MouthStretch": 0.4}, # i
+    "う": {"JawOpen": 0.3, "LipPucker": 1.0}, # u
+    "お": {"LipFunnel": 0.3, "JawOpen": 0.8, "LipPucker": 0.4}, #  o
+    "ん": {"JawOpen": 0.2, "LipSuckUpper": 0.8, "MouthLowerDown": 0.7, "MouthStretch": 0.4}, # n
+}
 
-    "あ": {"JawOpen": 1.0},
+# Shape conversion set by Octo Hedgie
+# https://beanburrow.com
+UE_TO_VRC = {
+    "SetName": "VRC",
+    "vrc/sil": {},
+    "vrc/PP": {"LipPucker": 0.5, "CheekPuff": 0.2},
+    "vrc/FF": {"LipSuckUpper": 0.9},
+    "vrc/TH": {"JawOpen": 0.3, "LipFunnel": 0.4, "LipPucker": 0.5},
+    "vrc/DD": {"JawOpen": 0.3, "LipSuckUpper": 0.8, "MouthLowerDown": 0.5, "MouthStretch": 0.4},
+    "vrc/kk": {"LipFunnel": 0.7, "JawOpen": 0.5},
+    "vrc/CH": {"LipSuckUpper": 0.8, "MouthLowerDown": 0.5, "LipFunnel": 0.5},
+    "vrc/SS": {"LipSuckUpper": 0.8, "MouthLowerDown": 0.9, "MouthStretch": 0.4},
+    "vrc/nn": {"JawOpen": 0.2, "LipSuckUpper": 0.8, "MouthLowerDown": 0.7, "MouthStretch": 0.4},
+    "vrc/RR": {"JawOpen": 0.3, "LipFunnel": 0.4, "LipPucker": 0.5},
+    "vrc/aa": {"JawOpen": 1.0},
+    "vrc/E": {"JawOpen": 0.3, "LipSuckUpper": 0.8, "MouthLowerDown": 0.5, "MouthStretch": 0.4},
+    "vrc/ih": {"LipSuckUpper": 0.8, "MouthLowerDown": 0.5, "MouthStretch": 0.4},
+    "vrc/oh": {"LipFunnel": 0.3, "JawOpen": 0.8, "LipPucker": 0.4},
+    "vrc/ou": {"JawOpen": 0.3, "LipPucker": 1.0},
+    "vrc/Blink": {"EyeClosed": 1.0},
+    "vrc/LookUp": {"EyeLookUp": 1.0},
+    "vrc/LookDown": {"EyeLookDown": 1.0},
 }
 
 SHAPE_CONVERSIONS = {
     "Unified Expressions → ARKit": UE_TO_ARKIT,
     "Unified Expressions → SRanipal": UE_TO_SRANIPAL,
     "Unified Expressions → MMD": UE_TO_MMD,
+    "Unified Expressions → VRC": UE_TO_VRC,
 }
 
 # ------------------------------------------------------------
@@ -364,6 +436,7 @@ class OBJECT_OT_convert_shape_set(bpy.types.Operator):
                 target = obj.shape_key_add(name=target_name, from_mix=False)
             else:
                 target = key_blocks[target_name]
+                target.value = 0.0
 
             # Reset target to basis
             for i, v in enumerate(target.data):
