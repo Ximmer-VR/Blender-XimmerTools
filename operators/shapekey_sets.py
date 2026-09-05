@@ -330,6 +330,9 @@ UE_TO_MMD = {
     "う": {"JawOpen": 0.3, "LipPucker": 1.0}, # u
     "お": {"LipFunnel": 0.3, "JawOpen": 0.8, "LipPucker": 0.4}, #  o
     "ん": {"JawOpen": 0.2, "LipSuckUpper": 0.8, "MouthLowerDown": 0.7, "MouthStretch": 0.4}, # n
+    "真面目": {"BrowOuterUp": 1.0}, # Serious
+    "にこり眉": {"BrowUp": 1.0}, # Smiley
+    "動揺": {"BrowInnerUp": 1.0}, # Sadness
 }
 
 # Shape conversion set by Octo Hedgie
